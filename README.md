@@ -8,8 +8,8 @@ The recent Amazon Product Advertising API has become more restrictive and diffic
 Although we support the latest Laravel/PHP, it is in maintenance mode with no other development work.
 
 ## Requirements
-- PHP >= 8.2
-- Laravel >= 11.0
+- PHP >= 8.3
+- Laravel >= 12.0
 
 ## Installation
 
