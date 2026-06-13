@@ -15,9 +15,9 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v6
+        uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 # v6.0.3
       - name: Setup PHP, with composer and extensions
-        uses: shivammathur/setup-php@v2 #https://github.com/shivammathur/setup-php
+        uses: shivammathur/setup-php@f3e473d116dcccaddc5834248c87452386958240 # 2.37.2
         with:
           php-version: latest
           extensions: mbstring
@@ -27,7 +27,7 @@ jobs:
       - name: Test
         run: vendor/bin/phpunit
       - name: Code Coverage
-        uses: qltysh/qlty-action/coverage@v1
+        uses: qltysh/qlty-action/coverage@a2277a908db90c4c868832fb9204521fb940fdb4 # v1
         with:
           oidc: true
           files: build/logs/clover.xml
